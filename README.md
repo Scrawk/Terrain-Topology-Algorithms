@@ -22,7 +22,7 @@ The slope map describes the steepness of the terrain and is handy for texturing 
 
 This is similar to the slope map but instead represents the horizontal gradient as opposed to the vertical gradient.
 
-The aspect map can to a few forms. The below image is of the terrains 'easterness'. The lighter areas face in the east direction and the darker in the west direction. The aspect can also represent 'northerness'. You can also just have the raw aspect value which is the faces angle in a 360 degree direction.
+The aspect map can take a few forms. The below image is of the terrains 'easterness'. The lighter areas face in the east direction and the darker in the west direction. The aspect can also represent 'northerness'. You can also just have the raw aspect value which is the faces angle in a 360 degree direction.
 
 ![Aspect Map](https://static.wixstatic.com/media/1e04d5_9743f6026a414409aba9f58af35b5039~mv2.jpg/v1/fill/w_550,h_550,al_c,q_80,usm_0.66_1.00_0.01/1e04d5_9743f6026a414409aba9f58af35b5039~mv2.jpg)
 
