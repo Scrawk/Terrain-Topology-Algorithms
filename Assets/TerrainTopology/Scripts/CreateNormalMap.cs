@@ -47,7 +47,7 @@ namespace TerrainTopology
 
                     Vector3 normal;
                     normal.x = -dx;
-                    normal.y = dy;
+                    normal.y = dy; //might need to flip y
                     normal.z = 1;
                     normal.Normalize();
 
