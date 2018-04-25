@@ -2,7 +2,7 @@
 
 This project is collection of algorithms that can be used to describe the topology of a terrain. The result of these algorithms can then be used for rendering the terrain or as input to other algorithms
 
-See [home page](https://www.digital-dust.com/single-post/2017/05/17/Terrain-topology-algorithms) for more information and unity package download.
+You can download a Unity package [here](https://app.box.com/s/g9vkg2wc23eug9u84r0yklui3g4n5f9e).
 
 ## Normal map
 
