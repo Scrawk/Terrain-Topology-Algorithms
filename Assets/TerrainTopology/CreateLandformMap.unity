@@ -247,7 +247,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 3000
+  far clip plane: 2000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -273,13 +273,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 25582365}
-  m_LocalRotation: {x: -0.007148302, y: 0.81912094, z: -0.5735546, w: -0.005005294}
-  m_LocalPosition: {x: -32.02066, y: 1004.07715, z: 404.08398}
+  m_LocalRotation: {x: 0, y: 0.8191521, z: -0.5735764, w: 0}
+  m_LocalPosition: {x: -32.02066, y: 994.68024, z: 400.6638}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 70, y: 180, z: -1}
+  m_LocalEulerAnglesHint: {x: 70, y: 180, z: 0}
 --- !u!1001 &74929464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -456,11 +456,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 889774871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15ab8067170a8b044a917a60eacfacdf, type: 3}
+  m_Script: {fileID: 11500000, guid: db3c082652c33244682677a5eab78fe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_material: {fileID: 2100000, guid: 07cbe2b14c9584346ba4c3afc25c7587, type: 2}
   m_coloredGradient: 1
+  m_landformType: 1
 --- !u!4 &889774873
 Transform:
   m_ObjectHideFlags: 0

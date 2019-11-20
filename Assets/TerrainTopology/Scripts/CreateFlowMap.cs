@@ -1,6 +1,10 @@
 ﻿using System.Collections;
+
 using System.Collections.Generic;
+
 using UnityEngine;
+
+
 
 namespace TerrainTopology
 {
@@ -17,30 +21,30 @@ namespace TerrainTopology
 
         public int m_iterations = 5;
 
-        protected override void CreateMap(float[] heights, int width, int height)
+        protected override void CreateMap()
         {
 
-            float[,] waterMap = new float[width, height];
-            float[,,] outFlow = new float[width, height, 4];
+            float[,] waterMap = new float[m_width, m_height];
+            float[,,] outFlow = new float[m_width, m_height, 4];
 
-            FillWaterMap(0.0001f, waterMap, width, height);
+            FillWaterMap(0.0001f, waterMap, m_width, m_height);
 
             for(int i = 0; i < m_iterations; i++)
             {
-                ComputeOutflow(waterMap, outFlow, heights, width, height);
-                UpdateWaterMap(waterMap, outFlow, width, height);
+                ComputeOutflow(waterMap, outFlow, m_heights, m_width, m_height);
+                UpdateWaterMap(waterMap, outFlow, m_width, m_height);
             }
 
-            float[,] velocityMap = new float[width, height];
+            float[,] velocityMap = new float[m_width, m_height];
 
-            CalculateVelocityField(velocityMap, outFlow, width, height);
-            NormalizeMap(velocityMap, width, height);
+            CalculateVelocityField(velocityMap, outFlow, m_width, m_height);
+            NormalizeMap(velocityMap, m_width, m_height);
 
-            Texture2D flowMap = new Texture2D(width, height, TextureFormat.ARGB32, false, true);
+            Texture2D flowMap = new Texture2D(m_width, m_height);
 
-            for (int y = 0; y < height; y++)
+            for (int y = 0; y < m_height; y++)
             {
-                for (int x = 0; x < width; x++)
+                for (int x = 0; x < m_width; x++)
                 {
                     float v = velocityMap[x, y];
                     flowMap.SetPixel(x, y, new Color(v, v, v, 1));
