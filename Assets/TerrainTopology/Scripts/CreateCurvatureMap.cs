@@ -313,7 +313,7 @@ namespace TerrainTopology
 
         /// <summary>
         /// Kr
-        /// Describes flow lines twisting but does nor consider direction.
+        /// Describes flow lines twisting but does not consider direction.
         /// Non-negative.
         /// </summary>
         private float RingCurvature(float zx, float zy, float zxx, float zyy, float zxy)
