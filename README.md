@@ -2,7 +2,7 @@
 
 This project is collection of algorithms that can be used to describe the topology of a terrain. The result of these algorithms can then be used for rendering the terrain or as input to other algorithms.
 
-The formulas were take from a book called Digital Terrain Analysis for Soil Science.
+The formulas were taken from a book called Digital Terrain Analysis for Soil Science.
 
 Version 2 adds more curvature types, landform and residual types as well as a better way to visualize the maps using a color gradient and rescaling the wide dynamic range using a logarithmic scale.
 
